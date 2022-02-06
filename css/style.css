@@ -99,7 +99,7 @@ header .user img{
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
-    border:.7rem solid yellow;
+    border:.7rem solid rgb(0, 248, 145);
 }
 
 header .user .name{
@@ -113,7 +113,10 @@ header .user .post{
 }
 
 header .user .name{
-    color: rgb(48, 2, 253);
+    -webkit-text-stroke: 0.2px rgb(32, 230, 14)    ;
+    color: transparent;
+    background:linear-gradient(rgb(245, 6, 233),rgb(14, 192, 236));
+    -webkit-background-clip: text;
 }
 
 header .navbar{
@@ -170,16 +173,22 @@ header .navbar ul li a:hover{
 .home h3{
     font-size: 2.5rem;
     color:#fff;
+    font-family: cursive;
 }
 
 .home h1{
     font-size:5rem;
     color:rgb(255, 255, 255);
-}
+    }
 
 .home h1 span{
-    color:var(--yellow);
+    font-size: 60px;
+    color:transparent;
+    background:linear-gradient(rgb(245, 6, 233),rgb(14, 192, 236));
+    -webkit-background-clip: text;
+    
 }
+
 
 .home ul li{
     font-size:2rem;
@@ -236,9 +245,21 @@ data{
   position: relative;
   margin: 5px 0;
   line-height: 90px;
-  color: chartreuse;
+  
+  background: linear-gradient(to right, #f00,#ff0,#0ff,#f0f,#0f0,#0a44e6,#343F4F); 
+  color: transparent; 
+  -webkit-background-clip: text;
   font-size: 20px;
 }
+/* .dynamic-txts li span::before{
+    content: attr(data-text);
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden;
+    color: transparent;
+    -webkit-background-clip: text;
+    background: linear-gradient(to right, #f00,#ff0,#0ff,#f0f,#0f0,#ffc800);
+} */
 .dynamic-txts li span::after {
     content: "";
     position: absolute;
@@ -247,7 +268,7 @@ data{
     height: 197%;
     width: 100%;
     background: #111111;
-    border-left: 2px solid #3f51b5;
+    border-left: 2px solid chartreuse;
     animation: typing 3s steps(10) infinite;
 }
 @keyframes typing {
