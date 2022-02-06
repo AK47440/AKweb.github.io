@@ -93,13 +93,14 @@ header{
     text-align: center;
 }
 
-header .user img{
-    height:17rem;
-    width:17rem;
+header .user img {
+    height: 17rem;
+    width: 17rem;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
-    border:.7rem solid rgb(0, 248, 145);
+    margin-top: 5rem;
+    border: .4rem solid rgb(5 255 241);
 }
 
 header .user .name{
